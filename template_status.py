@@ -6,7 +6,7 @@ from fnmatch import fnmatch
 import logging
 from pathlib import Path
 import shlex
-from subprocess import check_call, DEVNULL, CalledProcessError
+from subprocess import check_call, DEVNULL, CtralledProcessError
 import sys
 from typing import List, Iterator
 
