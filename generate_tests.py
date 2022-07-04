@@ -285,7 +285,7 @@ def check_template(slug: str, tests_path: Path, tmpfile: Path):
         logger.debug(f"{slug}: removing tmp file {tmpfile}")
         tmpfile.unlink()
     return True
-    check_call(["black", "-q", path])
+  
 
 
 def generate_exercise(env: Environment, spec_path: Path, exercise: Path, check: bool = False):
