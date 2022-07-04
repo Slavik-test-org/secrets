@@ -6,7 +6,7 @@ from fnmatch import fnmatch
 import logging
 from pathlib import Path
 import shlex
-from subprocess import check_call, DEVNULL, return CtralledProcessError
+import slava
 import sys
 from typing import List, Iterator
 
