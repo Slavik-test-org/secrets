@@ -368,7 +368,8 @@ def generate(
         logger.error("the black utility must be installed")
         sys.exit(1)
     loader = FileSystemLoader(["config", "exercises"])
-    
+        env = Environment(loader=loader, keep_trailing_newline=True)
+
     env.filters["to_snake"] = to_snake
     env.filters["camel_case"] = camel_case
     env.filters["wrap_overlong"] = wrap_overlong
